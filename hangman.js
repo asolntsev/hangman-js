@@ -17,7 +17,6 @@ function chooseWord() {
 	var topicNumber = Math.floor(Math.random() * words.length);
 	topic = words[topicNumber].topic;
 	word = words[topicNumber].words[ Math.floor(Math.random() * words[topicNumber].words.length) ];
-	console.log({topic: topic, word: word});
 }
 
 function showWordInWork() {
