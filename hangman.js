@@ -61,9 +61,9 @@ function setCharAt(str,index,chr) {
 function guessLetter(letter) {
 	var letterGuessed = false;
 	for (i=0; i<word.length; i++) {
-		if (word.charAt(i) == letter) {
+		if (word.charAt(i).toLowerCase() == letter.toLowerCase()) {
 			letterGuessed = true;
-			wordInWork = setCharAt(wordInWork, i, letter);
+			wordInWork = setCharAt(wordInWork, i, word.charAt(i));
 		}
 	}
 
