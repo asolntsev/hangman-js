@@ -1,3 +1,21 @@
 The HANGMAN game
 
 http://asolntsev.github.com/hangman/
+
+
+# Git crash course:
+cd ~/Dropbox/projects/hangman
+
+git checkout master
+<MODIFY SOURCES>
+git add *
+git ci -m "Added some words"
+git commit -m "Added some words"
+git push origin master
+
+# Merged to branch gh-pages:
+git checkout gh-pages
+git merge master
+git status
+git push origin master:gh-pages
+
